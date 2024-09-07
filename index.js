@@ -4,6 +4,7 @@ bodyEl.addEventListener("mousemove", (event)=>{
     const xPos = event.offsetX;
     const yPos = event.offsetY;
     const spanEl = document.createElement("span");
+    spanEl.classList.add("emoji"); 
     spanEl.style.left = xPos + "px";
     spanEl.style.top = yPos + "px";
     const size = Math.random() * 100;
